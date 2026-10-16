@@ -1,7 +1,7 @@
 # Froggy Afterglow
 
 <p align="center">
-  <img src="Assets/sprites/Snowboarder%20Frog.png" alt="Snowboarder Frog" width="520">
+  <img src="Assets/sprites/froggy.png" alt="Froggy" width="520">
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Status-Playable%20Prototype-f0a84b" alt="Playable prototype">
 </p>
 
-> **Froggy Afterglow** is a fast, playful downhill run where you guide a snowboarder frog across snowy slopes, build speed, launch into the air, and land cleanly enough to reach the finish line.
+> **Froggy Afterglow** is a fast, playful downhill run where you guide Froggy across snowy slopes, build speed, launch into the air, and land cleanly enough to reach the finish line.
 
 ## The Run
 
@@ -28,7 +28,7 @@ Every run is a balance between control and momentum. Lean into the slopes, use t
 - **Trick scoring** with `+100` points for each complete flip.
 - **Reactive snow** with a trail while the board is touching the ground.
 - **Clear win and crash states** with particles and automatic scene reloads.
-- **A colorful snowboarding frog** set against a playful winter course.
+- **Froggy, the colorful snowboarding hero** set against a playful winter course.
 
 ## Controls
 
@@ -52,7 +52,7 @@ Every run is a balance between control and momentum. Lean into the slopes, use t
 ### Hero artwork
 
 <p align="center">
-  <img src="Assets/sprites/Snowboarder%20Frog.png" alt="The snowboarder frog" width="720">
+  <img src="Assets/sprites/froggy.png" alt="Froggy, the snowboarder" width="720">
 </p>
 
 ### Gameplay screenshots
