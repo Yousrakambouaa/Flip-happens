@@ -55,11 +55,6 @@ Here are two screenshots showing the game mechanics:
   <em>Snobie scores his first 100 points, while Lily approaches the finish line.</em>
 </p>
 
-## Video
-
-Here is a short recording of the game:
-
-**[Watch the gameplay recording](Screenshots/gameplay-recording.mp4)**
 
 ## Controls
 
