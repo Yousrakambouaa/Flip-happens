@@ -1,4 +1,4 @@
-# Flipp Happennnns
+# Flip Happennnns
 
 <p align="center">
   <img src="Assets/sprites/snobie.png" alt="Snobie snowboarding" width="42%">
