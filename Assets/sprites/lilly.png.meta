@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 70b9a6158017ec14b8c8168e7e47d98c
+guid: 47d4de80f61fb1f44b91cd0dc3b4b0d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3809319501612307451
-    second: Snowboarding Dino_0
+      213: -2536785865876182021
+    second: Adventurous Squirrel Skateboarder_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Snowboarding Dino_0
+      name: Adventurous Squirrel Skateboarder_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 497
-        height: 331
+        width: 1268
+        height: 1198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf3d19177eb6dd430800000000000000
-      internalID: 3809319501612307451
+      spriteID: bfbe73902b68bccd0800000000000000
+      internalID: -2536785865876182021
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Snowboarding Dino_0: 3809319501612307451
+      Adventurous Squirrel Skateboarder_0: -2536785865876182021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -413,7 +413,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6a81f68544adb4c8e0ef9798ebe85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharSelectManager
-  scoreCanvas: {fileID: 0}
+  scoreCanvas: {fileID: 1786382258}
+  froggySprite: {fileID: 2065692425}
+  squiwiSprite: {fileID: 1026996061}
 --- !u!1 &244351506
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +571,7 @@ Transform:
   m_Children:
   - {fileID: 1948359299}
   - {fileID: 1026996062}
+  - {fileID: 2065692427}
   - {fileID: 856564034}
   - {fileID: 1586800618}
   m_Father: {fileID: 0}
@@ -619,25 +622,27 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 20.145964, y: 11.873889}
-      - {x: 9, y: 13.000001}
+    - - {x: 15.145964, y: 3.8738885}
+      - {x: 4, y: 12.000001}
       - {x: 3.0489426, y: 14.309017}
       - {x: -6.7346573, y: 16.686079}
-      - {x: -14.549606, y: 18.63149}
-      - {x: -23.154732, y: 20.940338}
-      - {x: -36.174156, y: 25.396744}
-      - {x: -38.027794, y: 17.866253}
-      - {x: -35.508682, y: 14.851369}
-      - {x: -25.587784, y: 10.190984}
-      - {x: -20.894135, y: 9.160581}
+      - {x: -5.5496063, y: 18.63149}
+      - {x: -4.1547318, y: 17.940338}
+      - {x: -8.174156, y: 24.396744}
+      - {x: -34.633907, y: 35.48367}
+      - {x: -37.027794, y: 32.866253}
+      - {x: -37.508682, y: 27.851368}
+      - {x: -36.587784, y: 24.190983}
+      - {x: -17.894135, y: 14.160581}
       - {x: -16.412214, y: 8.190984}
       - {x: -10.62845, y: 6.2592936}
       - {x: -5.445465, y: 6.1343446}
-      - {x: -2.0583992, y: 4.930675}
-      - {x: 7.5444355, y: 3.979773}
-      - {x: 18.664616, y: 0.3842913}
-      - {x: 23.951063, y: 3.3090177}
-      - {x: 27.951056, y: 10.309018}
+      - {x: -5.058399, y: 2.930675}
+      - {x: 4.5444355, y: -3.020227}
+      - {x: 15.664616, y: -10.615708}
+      - {x: 28.942293, y: -7.4273868}
+      - {x: 37.951065, y: -4.6909823}
+      - {x: 39.951057, y: -0.6909822}
   m_UseDelaunayMesh: 1
 --- !u!114 &248373698
 MonoBehaviour:
@@ -655,6 +660,7 @@ MonoBehaviour:
   baseSpeed: 15
   boostpeed: 30.9
   powerUpParticles: {fileID: 1586800620}
+  scoreManager: {fileID: 1786382260}
 --- !u!58 &248373699
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -689,8 +695,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -16.3, y: 62.91}
-  m_Radius: 7.65
+  m_Offset: {x: 28.8, y: 63.2}
+  m_Radius: 9.5
 --- !u!114 &248373700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,19 +1464,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: snobie
+  m_text: snobie froggy
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42efa02a82d72254eb09c1e785b7968e, type: 2}
-  m_sharedMaterial: {fileID: -3341034517428682675, guid: 42efa02a82d72254eb09c1e785b7968e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca7ab719e4ac3e43b87a3fca1039558, type: 2}
+  m_sharedMaterial: {fileID: -3341034517428682675, guid: aca7ab719e4ac3e43b87a3fca1039558, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
+    rgba: 4280953386
+  m_fontColor: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 1}
+  m_enableVertexGradient: 1
+  m_colorMode: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -1635,7 +1641,7 @@ GameObject:
   - component: {fileID: 692860073}
   - component: {fileID: 692860072}
   m_Layer: 5
-  m_Name: Froggy1
+  m_Name: squiwi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1684,8 +1690,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.019223925, g: 0.14401075, b: 0.1509434, a: 1}
+    m_PressedColor: {r: 0.060074773, g: 0.27176517, b: 0.2830189, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1705,7 +1711,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 692860073}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 211029137}
+        m_TargetAssemblyTypeName: CharSelectManager, Assembly-CSharp
+        m_MethodName: ChooseSquiwi
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &692860073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,7 +1737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7830189, g: 0.77506274, b: 0.5281684, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6668,7 +6686,7 @@ GameObject:
   - component: {fileID: 871520756}
   - component: {fileID: 871520755}
   m_Layer: 5
-  m_Name: Froggy2
+  m_Name: froggy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6717,8 +6735,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.75257194, g: 0.60898006, b: 0.8018868, a: 1}
+    m_PressedColor: {r: 0.08677464, g: 0.735849, b: 0.1920257, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6738,7 +6756,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 871520756}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 211029137}
+        m_TargetAssemblyTypeName: CharSelectManager, Assembly-CSharp
+        m_MethodName: ChooseFroggy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &871520756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6752,7 +6782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3051798, g: 0.509434, b: 0.45955735, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6879,12 +6909,12 @@ GameObject:
   - component: {fileID: 1026996062}
   - component: {fileID: 1026996063}
   m_Layer: 6
-  m_Name: froggy
+  m_Name: lily
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1026996062
 Transform:
   m_ObjectHideFlags: 0
@@ -6893,13 +6923,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026996061}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.23750484, w: 0.97138643}
-  m_LocalPosition: {x: 3.5656352, y: 36.716377, z: 0}
-  m_LocalScale: {x: 2.6251378, y: 2.5543065, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.02200078, w: 0.999758}
+  m_LocalPosition: {x: 1.0770121, y: 46.83625, z: 0}
+  m_LocalScale: {x: 6.7929997, y: 10.114662, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 248373696}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 27.479}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.521}
 --- !u!212 &1026996063
 SpriteRenderer:
   serializedVersion: 2
@@ -6949,7 +6979,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 238
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1583855264976019555, guid: 77e2aaf6e4a5b1640bf811753d66b317, type: 3}
+  m_Sprite: {fileID: -2536785865876182021, guid: 47d4de80f61fb1f44b91cd0dc3b4b0d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11852,19 +11882,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LILYYYYYY
+  m_text: LILLY SQUIWI
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 42efa02a82d72254eb09c1e785b7968e, type: 2}
-  m_sharedMaterial: {fileID: -3341034517428682675, guid: 42efa02a82d72254eb09c1e785b7968e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca7ab719e4ac3e43b87a3fca1039558, type: 2}
+  m_sharedMaterial: {fileID: -3341034517428682675, guid: aca7ab719e4ac3e43b87a3fca1039558, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
+    rgba: 4280953386
+  m_fontColor: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 1}
+  m_enableVertexGradient: 1
+  m_colorMode: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -24471,7 +24501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9999542, y: -0.000030517578}
+  m_AnchoredPosition: {x: -25.800575, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2034497235
@@ -24494,7 +24524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1583855264976019555, guid: 77e2aaf6e4a5b1640bf811753d66b317, type: 3}
+  m_Sprite: {fileID: -2536785865876182021, guid: 47d4de80f61fb1f44b91cd0dc3b4b0d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24555,6 +24585,97 @@ Transform:
   - {fileID: 244351508}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2065692425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065692427}
+  - component: {fileID: 2065692426}
+  m_Layer: 6
+  m_Name: snobie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &2065692426
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065692425}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 238
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -2078397060694843675, guid: 45b62626ca1f3c64980dbe778174adbf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 29.69, y: 34.260002}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!4 &2065692427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065692425}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.02200078, w: 0.999758}
+  m_LocalPosition: {x: 6.788196, y: 38.73584, z: 0}
+  m_LocalScale: {x: 6.7929997, y: 10.114662, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 248373696}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.521}
 --- !u!1 &2131915627
 GameObject:
   m_ObjectHideFlags: 0
