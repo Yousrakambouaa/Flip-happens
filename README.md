@@ -57,15 +57,9 @@ Here are two screenshots showing the game mechanics:
 
 ## Video
 
-Click the preview to open the gameplay recording:
+Here is a short recording of the game:
 
-<p align="center">
-  <a href="Screenshots/gameplay-recording.mp4">
-    <img src="Screenshots/snobie-first-100-points.png" alt="Watch the Flipp Happennnns gameplay recording" width="80%">
-  </a>
-</p>
-
-**[Open the gameplay recording](Screenshots/gameplay-recording.mp4)**
+**[Watch the gameplay recording](Screenshots/gameplay-recording.mp4)**
 
 ## Controls
 
