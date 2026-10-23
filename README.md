@@ -106,4 +106,4 @@ The main gameplay responsibilities are kept in small scripts:
 
 ## Status
 
-This is a small work in progress learning project and a starting point for practicing Unity.
+This is a small work in progress learning project.
